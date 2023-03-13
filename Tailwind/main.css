@@ -14,7 +14,7 @@ html{
     @apply text-2xl font-semibold text-[#181b21] mx-[0.8rem] px-[0.8re] py-[0.4rem] rounded-[0.8rem] bg-transparent hover:bg-[#181621] hover:bg-opacity-5 transition-all duration-300;
 }
 .car_section{
-    @apply w-full h-screen;
+    @apply w-full h-screen relative;
 }
 .car_img{
     @apply w-full h-full object-cover;
@@ -23,7 +23,7 @@ html{
     @apply absolute top-[20%] left-[50%] text-center;
 }
 .transform_50{
-    transform: translate(-50% -50%);
+    transform: translate(-50%, -50%);
 }
 .model_name{
     @apply text-[4rem] text-[#393c41] font-semibold;
@@ -39,4 +39,7 @@ html{
 }
 .inventory{
     @apply text-[#393c41] bg-white opacity-60 ml-8;
+}
+.down_svg{
+    @apply block w-full h-20 mx-auto absolute top-[93%] animate-bounce;
 }
