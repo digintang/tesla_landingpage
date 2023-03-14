@@ -653,10 +653,28 @@ html{
   opacity: 0.6;
 }
 
+.inventory:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(76 77 81 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 @media (min-width: 1024px){
   .inventory{
     margin-left: 2rem;
   }
+}
+
+.order{
+  opacity: 0.6;
+}
+
+.order:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(23 26 32 / var(--tw-text-opacity));
 }
 
 .down_svg{
