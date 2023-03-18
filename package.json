@@ -75,7 +75,7 @@
   },
   "scripts": {
     "build": "tailwind build  tailwind/main.css -o public/tailwind.css",
-    "watch": "tailwind watch  tailwind/main.css -o public/tailwind.css -w"
+    "watch": "tailwind build  tailwind/main.css -o public/tailwind.css -w"
 
   
   },

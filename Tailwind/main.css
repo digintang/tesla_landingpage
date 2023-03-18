@@ -8,10 +8,13 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 .navbar{
-    @apply flex items-center justify-between w-full fixed top-0 z-10 h-[5.4rem] p-[3.4rem];
+    @apply flex items-center justify-between w-full fixed top-0 z-10 h-[5.4rem] p-[3.4rem] hover:text-[#181b21];
 }
 .nav_link{
     @apply text-2xl font-semibold text-[#181b21] mx-[0.8rem] px-[0.8re] py-[0.4rem] rounded-[0.8rem] bg-transparent hover:bg-[#181621] hover:bg-opacity-5 transition-all duration-300;
+}
+.nav_link_shop{
+    @apply text-2xl font-semibold text-white mx-[0.8rem] px-[0.8re] py-[0.4rem] rounded-[0.8rem] bg-transparent transition-all duration-300;
 }
 .car_section{
     @apply w-full h-screen relative;
@@ -22,23 +25,38 @@ html{
 .car_details{
     @apply absolute top-[20%] left-[50%] text-center;
 }
+.car_details_shop{
+    @apply absolute top-[70%] left-[50%] text-center;
+}
 .transform_50{
     transform: translate(-50%, -50%);
 }
+.transform_80{
+    transform: translate(-50%, -80%);
+}
 .model_name{
-    @apply text-[4rem] text-[#393c41] font-semibold;
+    @apply text-[4rem] text-[#fcfcfc] font-bold;
+}
+.model_name_shop{
+    @apply text-[4.5rem] text-[#fcfcfc] font-bold;
 }
 .tag_line{
-    @apply text-2xl text-[#4c4d51];
+    @apply text-2xl text-[#ffffff] font-semibold;
+}
+.tag_line_shop{
+    @apply text-4xl text-[#ffffff] font-semibold;
 }
 .car_buttons{
     @apply absolute top-[85%] left-[50%] flex flex-col lg:flex-row;
 }
 .btn{
-    @apply text-2xl text-white bg-[#171a20] font-medium uppercase my-2 py-[0.4rem] px-[2.4rem] rounded-[3.2rem] w-[25.5rem] h-16 bg-opacity-80;
+    @apply text-2xl text-white bg-[#171a20] font-medium uppercase my-2 py-[0.4rem] px-[2.4rem] rounded-[0.5rem] w-[25.5rem] h-16 bg-opacity-80;
 }
 .inventory{
     @apply text-[#393c41] bg-white opacity-60 lg:ml-8 hover:text-white hover:bg-[#4c4d51];
+}
+.inventory_shop{
+    @apply text-[#393c41] bg-white opacity-100 lg:ml-8 hover:text-white hover:bg-[#4c4d51];
 }
 .order{
     @apply hover:text-[#171a20] hover:bg-white opacity-60;
